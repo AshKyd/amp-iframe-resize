@@ -1,0 +1,23 @@
+<style>
+body{
+  padding:2em;
+  max-width:600px;
+  margin:0 auto;
+  font-family: sans-serif;
+}
+iframe{
+  border:10px solid purple;
+  width:100%;
+}
+</style>
+<h1>Iframe resizing example</h1>
+<p>The following example uses the amp-iframe-resize-child script inside an iframe to send changes to the amp-iframe-resize-parent script in this page.</p>
+<p>The result (if we're lucky) is a nice, resizing iframe.</p>
+<iframe src="child.html"></iframe>
+<script>
+var module = {};
+</script>
+<script src="parent/index.js"></script>
+<script>
+module.exports();
+</script>

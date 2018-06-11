@@ -1,0 +1,14 @@
+<div style="background:hotpink;background-image:url(https://placebear.com/200/200);background-position:center;"></div>
+<script>
+// Change the height of the hot pink div
+setInterval(() => {
+  document.querySelector("div").style.height =
+    3 * Math.round(Math.random() * 200) + "px";
+}, 1000);
+var module = {};
+</script>
+<script src="child/index.js"></script>
+<script>
+console.log(module);
+module.exports();
+</script>
