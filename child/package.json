@@ -1,8 +1,9 @@
 {
   "name": "amp-iframe-resize-child",
   "version": "1.0.0",
-  "description": "",
+  "description": "A teeny tiny (0.37 kb before gzip) resize handler for child iframes, that supports the [AMP-style resize event messages](https://ampbyexample.com/components/amp-iframe/#resizable-iframes).",
   "main": "index.js",
+  "repository": "github:ashkyd/amp-iframe-resize",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
