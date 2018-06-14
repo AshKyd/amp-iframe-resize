@@ -12,12 +12,12 @@ window resizes.
 
 ## Usage
 
-Install the package from NPM (`npm i amp-iframe-resize`);
+Install the package from NPM (`npm i amp-iframe-resize-child`);
 
 Then add the listeners like so:
 
 ```
-const resizeHandler = require('amp-iframe-resize');
+const resizeHandler = require('amp-iframe-resize-child');
 resizeHandler();
 ```
 

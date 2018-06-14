@@ -8,12 +8,12 @@ get the same resize behaviour working.
 
 ## Usage
 
-Install the package from NPM (`npm i amp-iframe-parent-resize`);
+Install the package from NPM (`npm i amp-iframe-resize-parent`);
 
 Then add the event listener like so:
 
 ```
-const resizeHandler = require('amp-iframe-parent-resize');
+const resizeHandler = require('amp-iframe-resize-parent');
 resizeHandler();
 ```
 

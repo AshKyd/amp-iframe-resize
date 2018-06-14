@@ -14,7 +14,6 @@ function getFrameFromEvent(e) {
 }
 
 function onResizeRequest(e) {
-  console.log("onResizeRequest");
   const data = e.data;
   if (data.sentinel !== "amp" || data.type !== "embed-size") return;
 

@@ -7,7 +7,6 @@ var lastHeight = -1;
 function emitResize() {
   var newHeight = document.documentElement.clientHeight;
   if (newHeight === lastHeight) return;
-  console.log("emit resize", newHeight);
   var payload = {
     sentinel: "amp",
     type: "embed-size",
