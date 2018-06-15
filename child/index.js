@@ -4,8 +4,17 @@
  * @see https://ampbyexample.com/components/amp-iframe/#resizable-iframes
  */
 var lastHeight = -1;
+
+function pxToNumber(measurement) {
+  return Number(measurement.replace("px", ""));
+}
 function emitResize() {
-  var newHeight = document.documentElement.clientHeight;
+  var computedStyle = getComputedStyle(document.body);
+  var newHeight =
+    pxToNumber(computedStyle.height) +
+    pxToNumber(computedStyle.marginTop) +
+    pxToNumber(computedStyle.marginBottom);
+
   if (newHeight === lastHeight) return;
   var payload = {
     sentinel: "amp",
@@ -17,14 +26,13 @@ function emitResize() {
 }
 
 module.exports = function() {
-  var emitHandler = emitResize;
-  var observer = new MutationObserver(emitHandler);
+  var observer = new MutationObserver(emitResize);
   observer.observe(document.body, {
     attributes: true,
     childList: true,
     subtree: true,
     attributeFilter: ["style", "class"]
   });
-  addEventListener("resize", emitHandler);
+  addEventListener("resize", emitResize);
   setInterval(emitResize, 5000);
 };
