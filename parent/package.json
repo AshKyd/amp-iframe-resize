@@ -1,6 +1,6 @@
 {
   "name": "amp-iframe-resize-parent",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A teeny tiny (0.27 kb before gzip) resize handler for parent iframes, that supports the [AMP-style resize event messages](https://ampbyexample.com/components/amp-iframe/#resizable-iframes).",
   "main": "index.js",
   "repository": "github:ashkyd/amp-iframe-resize",
