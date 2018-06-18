@@ -19,7 +19,7 @@ function onResizeRequest(e) {
 
   const frame = getFrameFromEvent(e);
   if (!frame) return;
-  frame.height = Number(data.height);
+  frame.style.height = Number(data.height) + "px";
 }
 
 module.exports = function() {
