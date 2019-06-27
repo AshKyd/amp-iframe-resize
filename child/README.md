@@ -1,10 +1,12 @@
 # AMP iframe resize emitter
 
-A teeny tiny (0.37 kb before gzip) resize handler for child iframes, that
-supports the [AMP-style resize event messages](https://ampbyexample.com/components/amp-iframe/#resizable-iframes).
+A teeny tiny (0.37 kb before gzip) resize handler for child iframes, which
+automatically resizes your iframe to the size of the content.
 
-Use this module if you're creating content that will be consumed in AMP articles
-that needs the parent frame to be resized to fit.
+This library supports [AMP-style resize event messages](https://ampbyexample.com/components/amp-iframe/#resizable-iframes)
+which should work if you're creating content to be consumed in AMP articles. you
+can also use this if you're just making iframes that you want to resize (using
+the [amp-iframe-parent-resize](./amp-iframe-resize) package.
 
 This script binds a mutation observer to the body & listener to the resize event
 so it will check for changes to dimensions whenever your content does, or if the
